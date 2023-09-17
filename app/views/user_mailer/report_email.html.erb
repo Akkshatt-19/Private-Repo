@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+  <h1 style="background-color: chartreuse; color: black;">Medical Reports of <%= @r_user.name %></h1>
+  <table>
+    <strong>
+      <tr>
+        <thead style="text-align: center;"><b>Report of the Patient</b></thead>
+      </tr>
+      <tr>
+        <td style="color: black;"><b>Name</b></td>
+        <td><%= @r_user.name %></td>
+      </tr>
+      <tr>
+        <td style="color: black;"><b>Status: (<%= @r_appointment.status %>)</b></td>
+        <td><%= @r_appointment.updated_at %></td>
+      </tr>
+      <tr>
+        <td style="color: black;"><b>Disease</b></td>
+        <td><%= @r_appointment.description %></td>
+      </tr>
+      <tr>
+        <td style="color: black;"><b>Test Center</b></td>
+        <td><%= @r_test_center.name %></td>
+      </tr>
+      <tr>
+        <td style="color: black;"><b>Location of Test Center</b></td>
+        <td><%= @r_test_center.location %></td>
+      </tr>
+      <tr>
+        <td style="color: black;"><b>Hospital</b></td>
+        <td><%= @r_hospital.name %></td>
+      </tr>
+      
+      <tr>
+        <td style="color: black;"><b>Location of Hospital</b></td>
+        <td> <%= @r_hospital.location %></td>
+      </tr>
+    </strong>
+  </table>
+  <br>
+  <p style="background-color: chartreuse;">Thanks for your valuable time !!!</p>
+  <p style="background-color: chartreuse; color: black;">Stay healthy!!!</p>
+  
+</body>
+</html>
